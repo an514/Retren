@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title>FERDOS BHAI</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="ENJOY FREE LIVE TV">
-    <meta name="keywords" content="LIVETV, SPORTS, MOVIES, MUSIC">
-    <meta name="author" content="Ferdos Bhai">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
-    <script src="assets/js/jwplayer.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/VLV8Lp3w/avatar-1002046717675.jpg">
-    <link rel="stylesheet" type="text/css" href="./codenine_skin.css">
-    <script type='text/javascript' src='https://content.jwplatform.com/libraries/IDzF9Zmk.js'></script>
+    <title>Vipbox</title>
+    <meta name="robots" content="noindex">
+    <style type="text/css">
+        .box-responsive .responsive {
+            max-width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .box-responsive {
+            position: relative;
+            width: 800px;
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            max-width: 100%;
+        }
+        iframe[src*="cache/links"] {
+            margin-top: 5px;
+            min-height: 40px !important;
+            background: transparent !important;
+        }
+        .embed-code textarea {
+            width: 100%;
+            margin: 15px auto;
+            display: block;
+            background: transparent;
+            color: rgba(255,255,255,.35);
+            border: 1px solid rgba(255,255,255,.12);
+            padding: 10px;
+            height: 80px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+    </style>
 </head>
+<body style="background: #1e1f2d; display: flex; padding: 0px;">
 
-<body>
+    <div style="margin: 20px auto;">
+        <div class="box-responsive">
+            <iframe class="responsive" allow="encrypted-media" width="700" height="480" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowfullscreen="yes" src="//emb.apl374.me/player/live.php?id=226010&w=700&h=480" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+        </div>
 
-    <div id="my-video"></div>
+        <div style="margin: 40px 0; text-align: center;">
+            <div style="max-width: 1000px; color: rgba(255,255,255,.25); font-family: helvetica; font-size: 10px; margin: 0 auto; line-height: 1; font-weight: 400; padding: 20px; word-break: break-all;">
+                This video is embedded using a frame from a third-party source. All video content found on this site has never been and is not hosted on our servers. If you find that some content violates your rights, you may request removal of that content from the host responsible for the content.
+            </div>
+        </div>
+    </div>
 
-    <script type="text/javascript">
-        var playerInstance = jwplayer("my-video");
-
-        playerInstance.setup({
-            file: "https://livess.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/jamuna-test-sample-ok.stream/playlist.m3u8",
-            width: "100%",
-            height: "100%",
-            aspectratio: "16:9",
-            controls: true,
-            stretching: "uniform",
-            autostart: true,  //     
-            allowfullscreen: true,
-            pip: true,  // PiP   
-            skin: {
-                name: "netflix"
-            }
-        });
-
-        //  
-        playerInstance.setMute(false);
-
-        playerInstance.on('play', function() {
-            playerInstance.setFullscreen(false);  // 
-        });
-
-    </script>
 </body>
-
 </html>
