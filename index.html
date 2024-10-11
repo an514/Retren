@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Anastv</title>
+    <title>0nastv</title>
     <meta name="robots" content="noindex">
     <style type="text/css">
         .box-responsive .responsive {
@@ -14,11 +14,9 @@
         }
         .box-responsive {
             position: relative;
-            width: 800px;
-            height: 0;
+            width: 100vw;  /* Full viewport width */
+            height: 80vh;   /* 80% of viewport height */
             overflow: hidden;
-            padding-bottom: 56.25%;
-            max-width: 100%;
         }
         iframe[src*="cache/links"] {
             margin-top: 5px;
@@ -39,17 +37,15 @@
         }
     </style>
 </head>
-<body style="background: #1e1f2d; display: flex; padding: 0px;">
+<body style="background: #1e1f2d; padding: 0; margin: 0; height: 100vh;">
 
-    <div style="margin: 20px auto;">
-        <div class="box-responsive">
-            <iframe class="responsive" allow="encrypted-media" width="700" height="480" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowfullscreen="yes" src="//emb.apl374.me/player/live.php?id=226010&w=700&h=480" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
-        </div>
+    <div class="box-responsive">
+        <iframe class="responsive" allow="encrypted-media" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowfullscreen="yes" src="//emb.apl374.me/player/live.php?id=226010&w=1920&h=1080" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+    </div>
 
-        <div style="margin: 40px 0; text-align: center;">
-            <div style="max-width: 1000px; color: rgba(255,255,255,.25); font-family: helvetica; font-size: 10px; margin: 0 auto; line-height: 1; font-weight: 400; padding: 20px; word-break: break-all;">
-                This video is embedded using a frame from a third-party source. All video content found on this site has never been and is not hosted on our servers. If you find that some content violates your rights, you may request removal of that content from the host responsible for the content.
-            </div>
+    <div style="text-align: center;">
+        <div style="max-width: 1000px; color: rgba(255,255,255,.25); font-family: helvetica; font-size: 10px; margin: 0 auto; line-height: 1; font-weight: 400; padding: 20px; word-break: break-all;">
+            This video is embedded using a frame from a third-party source. All video content found on this site has never been and is not hosted on our servers. If you find that some content violates your rights, you may request removal of that content from the host responsible for the content.
         </div>
     </div>
 
